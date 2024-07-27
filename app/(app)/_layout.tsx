@@ -4,7 +4,7 @@ import { useSession } from '../../ctx';
 
 export default function AppLayout() {
   const { session, isLoading } = useSession();
-
+  console.log(session);
   // You can keep the splash screen open, or render a loading screen like we do here.
   if (isLoading) {
     return <Text>Loading...</Text>;
