@@ -25,7 +25,7 @@ export default function SignIn() {
   const handleSignIn = async () => {
     setIsLoading(true);
     try {
-      const response = await axios.post('http://192.168.1.7:3000/users/signup', { // Replace with your backend IP
+      const response = await axios.post('https://ft-final-hslfllsqe-gauravs-projects-9d6ba5c9.vercel.app/users/signup', { // Replace with your backend IP
         name,
         phoneNumber,
         email,
@@ -43,6 +43,7 @@ export default function SignIn() {
       setError(errorMessage);
     } finally {
       setIsLoading(false);
+      
     }
   };
 
